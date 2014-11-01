@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[CSLIU's Blog]]></title>
+  <subtitle><![CDATA[Dream begins with single step]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://elecsliu.com/"/>
+  <updated>2014-11-01T03:18:01.638Z</updated>
+  <id>http://elecsliu.com/</id>
+  
+  <author>
+    <name><![CDATA[CSLIU]]></name>
+    <email><![CDATA[csliu@foxmail.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[博客搭建记录]]></title>
+    <link href="http://elecsliu.com/2014/11/01/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
+    <id>http://elecsliu.com/2014/11/01/博客搭建记录/</id>
+    <published>2014-11-01T02:10:51.000Z</published>
+    <updated>2014-11-01T03:07:15.000Z</updated>
+    <content type="html"><![CDATA[<p>1、使用Pacman主题<br>2、添加多说评论<br>3、文章重复现象解决办法：删除博客根目录下的db.jason<br>4、在variable.styl文件中修改主题配色</p>
+<figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">color</span>-blue = <span class="preprocessor">#20b2aa ##修改标题颜色为浅海洋绿</span></div><div class="line"><span class="keyword">color</span>-theme = <span class="preprocessor">#20b2aa ##修改主题基础颜色为浅海洋绿</span></div></pre></td></tr></table></figure>
+
+<p>5、按照Pacman主题说明文件夹和文件后，在每次写文章时使用如下语法即可</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">tags:</div><div class="line">- 标签名</div><div class="line">categories:</div><div class="line">- 目录名</div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>1、使用Pacman主题<br>2、添加多说评论<br>3、文章重复现象解决办法：删除博客根目录下的db.jason<br>4、在variable.styl文件中修改主题配色</p>
+<figure class="highlight {bash}"><table><tr><]]>
+    </summary>
+    
+      <category term="HEXO" scheme="http://elecsliu.com/tags/HEXO/"/>
+    
+      <category term="HEXO" scheme="http://elecsliu.com/categories/HEXO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World!]]></title>
+    <link href="http://elecsliu.com/2014/10/27/hello-world/"/>
+    <id>http://elecsliu.com/2014/10/27/hello-world/</id>
+    <published>2014-10-27T14:10:41.000Z</published>
+    <updated>2014-11-01T03:09:47.000Z</updated>
+    <content type="html"><![CDATA[<p>Hello World<br>这是我的个人博客网站 <a href="http://hexo.io/" target="_blank" rel="external">elecsliu.com</a></p>
+<p>Date:2014.10.31</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Hello World<br>这是我的个人博客网站 <a href="http://hexo.io/" target="_blank" rel="external">elecsliu.com</a></p>
+<p>Date:2014.10.31</p>
+]]>
+    </summary>
+    
+      <category term="HEXO" scheme="http://elecsliu.com/tags/HEXO/"/>
+    
+      <category term="HEXO" scheme="http://elecsliu.com/categories/HEXO/"/>
+    
+  </entry>
+  
+</feed>
