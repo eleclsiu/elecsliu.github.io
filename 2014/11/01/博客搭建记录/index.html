@@ -86,7 +86,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     </p>
   <p class="article-time">
     <time datetime="2014-11-01T02:10:51.000Z" itemprop="datePublished">11月 1 2014</time>
-    更新日期:<time datetime="2014-11-01T07:02:38.000Z" itemprop="dateModified">11月 1 2014</time>
+    更新日期:<time datetime="2014-11-01T08:00:13.000Z" itemprop="dateModified">11月 1 2014</time>
     
   </p>
 </header>
@@ -104,7 +104,16 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <p>5.按照Pacman主题说明文件夹和文件后，在每次写文章时使用如下语法即可：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">tags:</div><div class="line">- 标签名</div><div class="line">categories:</div><div class="line">- 目录名</div></pre></td></tr></table></figure>
 
-<p>6.将博客URL提交到搜索引擎:将搜索引擎的meta验证标签复制到主题文件夹下的head.ejs文件的head中<br>7.使用百度统计</p>
+<p>6.将博客URL提交到搜索引擎:将搜索引擎的meta验证标签复制到 hexo\themes\pacman\layout_partial\head.ejs的head中<br>7.使用百度统计:<br>编辑文件 hexo\themes\pacman_config.yml, 增加配置项：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">baidu_tongji: <span class="literal">true</span></div></pre></td></tr></table></figure>
+
+<p>新建文件 hexo\themes\pacman\layout_partial\baidu_tongji.ejs, 内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (theme.baidu_tongji){ %&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line"><span class="comment">#我的百度统计代码</span></div><div class="line">&lt;/script&gt;</div><div class="line">&lt;% } %&gt;</div></pre></td></tr></table></figure>
+
+<p>编辑文件 hexo\themes\modernist\layout_partial\head.ejs, 在<head>之前增加：</head></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'baidu_tongji'</span>) %&gt;</div></pre></td></tr></table></figure>
+
+<p>参考文章：<a href="http://www.tuicool.com/articles/AfQnQjy" target="_blank" rel="external">hexo你的博客</a><br>8.在<a href="http://www.pinpaibao.cn/" target="_blank" rel="external">品牌宝</a>申请个人网站认证</p>
   
 	</div>
 		<footer class="article-footer clearfix">
