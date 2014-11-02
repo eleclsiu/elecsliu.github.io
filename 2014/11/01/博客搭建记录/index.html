@@ -17,17 +17,12 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     
     <meta name="author" content="CSLIU">
     
-    <meta name="description" content="使用Pacman主题
-
-添加多说评论
-
-文章重复现象解决办法：删除博客根目录下的db.jason
-
-在variable.styl文件中修改主题配色
-
-
-12color-blue = #20b2aa ##修改标题颜色为浅海洋绿color-theme = #20b2aa ##修改主题基础颜色为浅海洋绿
-">
+    <meta name="description" content="1.使用Pacman主题
+2.添加多说评论
+3.文章重复现象解决办法：
+删除博客根目录下的db.jason
+4.在variable.styl文件中修改主题配色
+12color-blue = #20b2aa ##修改标题颜色为浅海洋绿color-theme = #20b2aa ##修改主题基础颜色为浅">
     
     
     
@@ -93,7 +88,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     </p>
   <p class="article-time">
     <time datetime="2014-11-01T02:10:51.000Z" itemprop="datePublished">11月 1 2014</time>
-    更新日期:<time datetime="2014-11-02T08:36:12.000Z" itemprop="dateModified">11月 2 2014</time>
+    更新日期:<time datetime="2014-11-02T09:07:31.000Z" itemprop="dateModified">11月 2 2014</time>
     
   </p>
 </header>
@@ -102,29 +97,24 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		
+		<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-使用Pacman主题"><span class="toc-number">1.</span> <span class="toc-text">1.使用Pacman主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-添加多说评论"><span class="toc-number">2.</span> <span class="toc-text">2.添加多说评论</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-文章重复现象解决办法："><span class="toc-number">3.</span> <span class="toc-text">3.文章重复现象解决办法：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-在variable-styl文件中修改主题配色"><span class="toc-number">4.</span> <span class="toc-text">4.在variable.styl文件中修改主题配色</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-将博客URL提交到搜索引擎:"><span class="toc-number">5.</span> <span class="toc-text">5.将博客URL提交到搜索引擎:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-使用百度统计:"><span class="toc-number">6.</span> <span class="toc-text">6.使用百度统计:</span></a></li></ol>
 		</div>
 		
-		<ol>
-<li><p>使用Pacman主题</p>
-</li>
-<li><p>添加多说评论</p>
-</li>
-<li><p>文章重复现象解决办法：删除博客根目录下的db.jason</p>
-</li>
-<li><p>在variable.styl文件中修改主题配色</p>
-</li>
-</ol>
+		<h4 id="1-使用Pacman主题">1.使用Pacman主题</h4>
+<h4 id="2-添加多说评论">2.添加多说评论</h4>
+<h4 id="3-文章重复现象解决办法：">3.文章重复现象解决办法：</h4>
+<p>删除博客根目录下的db.jason</p>
+<h4 id="4-在variable-styl文件中修改主题配色">4.在variable.styl文件中修改主题配色</h4>
 <figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">color</span>-blue = <span class="preprocessor">#20b2aa ##修改标题颜色为浅海洋绿</span></div><div class="line"><span class="keyword">color</span>-theme = <span class="preprocessor">#20b2aa ##修改主题基础颜色为浅海洋绿</span></div></pre></td></tr></table></figure>
 
-<ol>
-<li><p>将博客URL提交到搜索引擎:将搜索引擎的meta验证标签复制到 hexo\themes\pacman\layout_partial\head.ejs的head中</p>
-</li>
-<li><p>使用百度统计:</p>
-</li>
-</ol>
+<h4 id="5-将博客URL提交到搜索引擎:">5.将博客URL提交到搜索引擎:</h4>
+<p>将搜索引擎的meta验证标签复制到 hexo\themes\pacman\layout_partial\head.ejs的head中</p>
+<h4 id="6-使用百度统计:">6.使用百度统计:</h4>
 <ul>
-<li>编辑文件 hexo\themes\pacman_config.yml, 增加配置项：</li>
+<li><p>参考文章：<a href="http://www.tuicool.com/articles/AfQnQjy" target="_blank" rel="external">hexo你的博客</a></p>
+</li>
+<li><p>编辑文件 hexo\themes\pacman_config.yml, 增加配置项：</p>
+</li>
 </ul>
 <figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">baidu_tongji</span>: <span class="string">true</span></div></pre></td></tr></table></figure>
 
@@ -138,7 +128,6 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </ul>
 <figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="variable">%-</span> partial(<span class="string">'baidu_tongji'</span>) <span class="variable">%&gt;</span></div></pre></td></tr></table></figure>
 
-<p>参考文章：<a href="http://www.tuicool.com/articles/AfQnQjy" target="_blank" rel="external">hexo你的博客</a></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -196,7 +185,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  
+  <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-使用Pacman主题"><span class="toc-number">1.</span> <span class="toc-text">1.使用Pacman主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-添加多说评论"><span class="toc-number">2.</span> <span class="toc-text">2.添加多说评论</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-文章重复现象解决办法："><span class="toc-number">3.</span> <span class="toc-text">3.文章重复现象解决办法：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-在variable-styl文件中修改主题配色"><span class="toc-number">4.</span> <span class="toc-text">4.在variable.styl文件中修改主题配色</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-将博客URL提交到搜索引擎:"><span class="toc-number">5.</span> <span class="toc-text">5.将博客URL提交到搜索引擎:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-使用百度统计:"><span class="toc-number">6.</span> <span class="toc-text">6.使用百度统计:</span></a></li></ol>
   </div>
 
 <div id="asidepart">
