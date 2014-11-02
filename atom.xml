@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Dream begins with single step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://elecsliu.com/"/>
-  <updated>2014-11-02T01:28:18.558Z</updated>
+  <updated>2014-11-02T08:38:24.935Z</updated>
   <id>http://elecsliu.com/</id>
   
   <author>
@@ -15,31 +15,184 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Web知识学习笔记]]></title>
+    <link href="http://elecsliu.com/2014/11/02/Web%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://elecsliu.com/2014/11/02/Web知识学习笔记/</id>
+    <published>2014-11-02T07:59:15.000Z</published>
+    <updated>2014-11-02T08:26:09.000Z</updated>
+    <content type="html"><![CDATA[<p>学习来源为微信公众号：<strong>互联网产品经理文集</strong></p>
+<hr>
+<h2 id="缓存">缓存</h2>
+<h3 id="1-_本地缓存">1. 本地缓存</h3>
+<ul>
+<li>将不需要每次重复更新的icon图标、图片等在本地存储，加快网页响应。</li>
+<li>但有时需要定期更新，常用的定期更新机制有：设置更新标志、判断最后更新时间、定时强制更新等</li>
+</ul>
+<h3 id="2-_服务器缓存">2. 服务器缓存</h3>
+<ul>
+<li>例子：打分性的排行榜，计算量大，不能每个用户的每次请求都去计算实时的排序，这时需将结果存储起来，一段时间内都从该结果读取排行榜数据。</li>
+<li>服务器存储的主要情况：<ul>
+<li>将数据库查询或计算结果缓存</li>
+<li>将多数时间内不变的页面缓存</li>
+<li>将读取频繁的数据缓存</li>
+</ul>
+</li>
+<li>更新问题：对于更新频繁或实时性要求高的数据不适合服务器缓存。</li>
+<li>更新频次的确定要考虑计算量、使用场景、研发技术和框架等</li>
+</ul>
+<hr>
+<h2 id="同步异步">同步异步</h2>
+<blockquote>
+<ul>
+<li>同步：服务器更新后才返回端显示</li>
+<li>异步：用户操作立即响应，不需等服务器反馈</li>
+</ul>
+</blockquote>
+<p>需要考量的问题：</p>
+<blockquote>
+<ul>
+<li>该操作的数据是否必须保持服务端及时更新？</li>
+<li>该操作是否有必要打断用户的使用，让用户等待？</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="HTTP">HTTP</h2>
+<blockquote>
+<ul>
+<li>HTTP Request: 请求行、HTTP头、内容</li>
+<li>HTTP Response: 状态行、HTTP头、内容</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="静态、动态页面">静态、动态页面</h2>
+<blockquote>
+<ul>
+<li>静态页面：不需要服务器器端程序进行处理的页面</li>
+<li>动态页面：需要服务器端脚本进行处理之后输出的页面</li>
+<li>伪静态：可以把动态语言（比如PHP）的程序文件“.php”伪装成“.html”或者“.htm”。一方面可以避免黑客对于服务器处理逻辑的揣测，另一方面有利于<strong>SEO</strong></li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="程序设计模式MVP">程序设计模式<code>MVP</code></h2>
+<blockquote>
+<ul>
+<li>模型（Model）、视图（View）和控制器（Controller）</li>
+<li><code>前端工程师</code>会侧重于V、C的开发（也就是我们看到的页面和页面的展示逻辑）</li>
+<li><code>后端工程师</code>则主要侧重于M及其对应的数据库表、存储等的开发（也就是各种涉及到的对象，及对象的一些操作）</li>
+<li>如下即为研发用户注册/登录功能时的MVP示意图：<br><img src="/images/MVP_1.png" alt="MVP示例图"></li>
+<li>MVP三者相互独立，用户模型M除了可以给“注册”这个控制器使用，也可以给“登录”控制器使用。如果要更改密码验证规则，只需修改用户模型。整个代码的可维护性、开发效率大大提高了。</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="URL">URL</h2>
+<blockquote>
+<ul>
+<li><p><code>http://news.sina.com.cn/c/2014-10-04/203630948833.shtml</code><br>其中<code>http</code>是协议，<code>news.sina.com.cn</code>是域名，<code>/c/2014-10-04/</code>是路径，最后是文件名</p>
+</li>
+<li><p><code>http://www.baidu.com/s?wd=parameters&amp;ie=utf-8&amp;f=8&amp;tn=baidu</code><br>其中<code>wd</code>、<code>ie</code>、<code>f</code>、<code>tn</code>是参数名，<code>=</code>后面是参数值</p>
+</li>
+<li><p><code>http://chanyouji.com/articles/141</code><br><code>141</code>是文章的ID或唯一标识</p>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="网页构成">网页构成</h2>
+<h3 id="1-_HTML(HypeText_Mark-up_Language)">1. HTML(HypeText Mark-up Language)</h3>
+<blockquote>
+<ul>
+<li><code>网页的内容</code></li>
+<li>描述网页文档结构的语言，通过一系列标签定义网页内容</li>
+<li>Head:描述性信息，不显示在网页</li>
+<li>Body:<code>&lt;p&gt;段落文字&lt;a color=&quot;red&quot;&gt;红色字&lt;/a&gt;&lt;/p&gt;</code></li>
+</ul>
+</blockquote>
+<h3 id="2-_CSS(Cascading_Style_Sheets)">2. CSS(Cascading Style Sheets)</h3>
+<blockquote>
+<ul>
+<li><code>网页的表现</code></li>
+<li>精确控制网页元素展示方法，定义在Head部分</li>
+<li><code>&lt;style&gt;&lt;/style&gt;</code></li>
+</ul>
+</blockquote>
+<h3 id="3-_JS(Javascript)">3. JS(Javascript)</h3>
+<blockquote>
+<ul>
+<li><code>网页的行为</code></li>
+<li>网页中动态元素（评论展开、输入框文字变化等）的标签和属性的脚本语言</li>
+<li><code>&lt;script&gt;&lt;/script&gt;</code></li>
+</ul>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>学习来源为微信公众号：<strong>互联网产品经理文集</strong></p>
+<hr>
+<h2 id="缓存">缓存</h2>
+<h3 id="1-_本地缓存">1. 本地缓存</h3>
+<ul>
+<li>将不需要每次重复更新的icon图标、图片等在本地存储，加快网页]]>
+    </summary>
+    
+      <category term="前端" scheme="http://elecsliu.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="web" scheme="http://elecsliu.com/tags/web/"/>
+    
+      <category term="HTML" scheme="http://elecsliu.com/tags/HTML/"/>
+    
+      <category term="PM学技术" scheme="http://elecsliu.com/categories/PM%E5%AD%A6%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[博客搭建记录]]></title>
     <link href="http://elecsliu.com/2014/11/01/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
     <id>http://elecsliu.com/2014/11/01/博客搭建记录/</id>
     <published>2014-11-01T02:10:51.000Z</published>
-    <updated>2014-11-01T08:00:13.000Z</updated>
-    <content type="html"><![CDATA[<p>1.使用Pacman主题<br>2.添加多说评论<br>3.文章重复现象解决办法：删除博客根目录下的db.jason<br>4.在variable.styl文件中修改主题配色</p>
+    <updated>2014-11-02T08:36:12.000Z</updated>
+    <content type="html"><![CDATA[<ol>
+<li><p>使用Pacman主题</p>
+</li>
+<li><p>添加多说评论</p>
+</li>
+<li><p>文章重复现象解决办法：删除博客根目录下的db.jason</p>
+</li>
+<li><p>在variable.styl文件中修改主题配色</p>
+</li>
+</ol>
 <figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">color</span>-blue = <span class="preprocessor">#20b2aa ##修改标题颜色为浅海洋绿</span></div><div class="line"><span class="keyword">color</span>-theme = <span class="preprocessor">#20b2aa ##修改主题基础颜色为浅海洋绿</span></div></pre></td></tr></table></figure>
 
-<p>5.按照Pacman主题说明文件夹和文件后，在每次写文章时使用如下语法即可：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">tags:</div><div class="line">- 标签名</div><div class="line">categories:</div><div class="line">- 目录名</div></pre></td></tr></table></figure>
+<ol>
+<li><p>将博客URL提交到搜索引擎:将搜索引擎的meta验证标签复制到 hexo\themes\pacman\layout_partial\head.ejs的head中</p>
+</li>
+<li><p>使用百度统计:</p>
+</li>
+</ol>
+<ul>
+<li>编辑文件 hexo\themes\pacman_config.yml, 增加配置项：</li>
+</ul>
+<figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">baidu_tongji</span>: <span class="string">true</span></div></pre></td></tr></table></figure>
 
-<p>6.将博客URL提交到搜索引擎:将搜索引擎的meta验证标签复制到 hexo\themes\pacman\layout_partial\head.ejs的head中<br>7.使用百度统计:<br>编辑文件 hexo\themes\pacman_config.yml, 增加配置项：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">baidu_tongji: <span class="literal">true</span></div></pre></td></tr></table></figure>
+<ul>
+<li>新建文件 hexo\themes\pacman\layout_partial\baidu_tongji.ejs, 内容如下：</li>
+</ul>
+<figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="vbscript">&lt;% <span class="keyword">if</span> (theme.baidu_tongji){ %&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">#我的百度统计代码</div><div class="line"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"><span class="vbscript">&lt;% } %&gt;</span></div></pre></td></tr></table></figure>
 
-<p>新建文件 hexo\themes\pacman\layout_partial\baidu_tongji.ejs, 内容如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (theme.baidu_tongji){ %&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line"><span class="comment">#我的百度统计代码</span></div><div class="line">&lt;/script&gt;</div><div class="line">&lt;% } %&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>编辑文件 hexo\themes\modernist\layout_partial\head.ejs, 在<head>之前增加：</head></li>
+</ul>
+<figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="variable">%-</span> partial(<span class="string">'baidu_tongji'</span>) <span class="variable">%&gt;</span></div></pre></td></tr></table></figure>
 
-<p>编辑文件 hexo\themes\modernist\layout_partial\head.ejs, 在<head>之前增加：</head></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'baidu_tongji'</span>) %&gt;</div></pre></td></tr></table></figure>
-
-<p>参考文章：<a href="http://www.tuicool.com/articles/AfQnQjy" target="_blank" rel="external">hexo你的博客</a><br>8.在<a href="http://www.pinpaibao.cn/" target="_blank" rel="external">品牌宝</a>申请个人网站认证</p>
+<p>参考文章：<a href="http://www.tuicool.com/articles/AfQnQjy" target="_blank" rel="external">hexo你的博客</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>1.使用Pacman主题<br>2.添加多说评论<br>3.文章重复现象解决办法：删除博客根目录下的db.jason<br>4.在variable.styl文件中修改主题配色</p>
-<figure class="highlight {bash}"><table><tr><]]>
+    <![CDATA[<ol>
+<li><p>使用Pacman主题</p>
+</li>
+<li><p>添加多说评论</p>
+</li>
+<li><p>文章重复现象解决办法：删除博客根目录下的db.jason</p>
+</li>
+<li><p>在variable.styl文件中修改主题配色</p>
+</]]>
     </summary>
     
       <category term="HEXO" scheme="http://elecsliu.com/tags/HEXO/"/>

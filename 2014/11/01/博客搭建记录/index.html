@@ -17,7 +17,15 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     
     <meta name="author" content="CSLIU">
     
-    <meta name="description" content="1.使用Pacman主题2.添加多说评论3.文章重复现象解决办法：删除博客根目录下的db.jason4.在variable.styl文件中修改主题配色
+    <meta name="description" content="使用Pacman主题
+
+添加多说评论
+
+文章重复现象解决办法：删除博客根目录下的db.jason
+
+在variable.styl文件中修改主题配色
+
+
 12color-blue = #20b2aa ##修改标题颜色为浅海洋绿color-theme = #20b2aa ##修改主题基础颜色为浅海洋绿
 ">
     
@@ -85,7 +93,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     </p>
   <p class="article-time">
     <time datetime="2014-11-01T02:10:51.000Z" itemprop="datePublished">11月 1 2014</time>
-    更新日期:<time datetime="2014-11-01T08:00:13.000Z" itemprop="dateModified">11月 1 2014</time>
+    更新日期:<time datetime="2014-11-02T08:36:12.000Z" itemprop="dateModified">11月 2 2014</time>
     
   </p>
 </header>
@@ -97,22 +105,40 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 		
 		</div>
 		
-		<p>1.使用Pacman主题<br>2.添加多说评论<br>3.文章重复现象解决办法：删除博客根目录下的db.jason<br>4.在variable.styl文件中修改主题配色</p>
+		<ol>
+<li><p>使用Pacman主题</p>
+</li>
+<li><p>添加多说评论</p>
+</li>
+<li><p>文章重复现象解决办法：删除博客根目录下的db.jason</p>
+</li>
+<li><p>在variable.styl文件中修改主题配色</p>
+</li>
+</ol>
 <figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">color</span>-blue = <span class="preprocessor">#20b2aa ##修改标题颜色为浅海洋绿</span></div><div class="line"><span class="keyword">color</span>-theme = <span class="preprocessor">#20b2aa ##修改主题基础颜色为浅海洋绿</span></div></pre></td></tr></table></figure>
 
-<p>5.按照Pacman主题说明文件夹和文件后，在每次写文章时使用如下语法即可：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">tags:</div><div class="line">- 标签名</div><div class="line">categories:</div><div class="line">- 目录名</div></pre></td></tr></table></figure>
+<ol>
+<li><p>将博客URL提交到搜索引擎:将搜索引擎的meta验证标签复制到 hexo\themes\pacman\layout_partial\head.ejs的head中</p>
+</li>
+<li><p>使用百度统计:</p>
+</li>
+</ol>
+<ul>
+<li>编辑文件 hexo\themes\pacman_config.yml, 增加配置项：</li>
+</ul>
+<figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">baidu_tongji</span>: <span class="string">true</span></div></pre></td></tr></table></figure>
 
-<p>6.将博客URL提交到搜索引擎:将搜索引擎的meta验证标签复制到 hexo\themes\pacman\layout_partial\head.ejs的head中<br>7.使用百度统计:<br>编辑文件 hexo\themes\pacman_config.yml, 增加配置项：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">baidu_tongji: <span class="literal">true</span></div></pre></td></tr></table></figure>
+<ul>
+<li>新建文件 hexo\themes\pacman\layout_partial\baidu_tongji.ejs, 内容如下：</li>
+</ul>
+<figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="vbscript">&lt;% <span class="keyword">if</span> (theme.baidu_tongji){ %&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">#我的百度统计代码</div><div class="line"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"><span class="vbscript">&lt;% } %&gt;</span></div></pre></td></tr></table></figure>
 
-<p>新建文件 hexo\themes\pacman\layout_partial\baidu_tongji.ejs, 内容如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (theme.baidu_tongji){ %&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line"><span class="comment">#我的百度统计代码</span></div><div class="line">&lt;/script&gt;</div><div class="line">&lt;% } %&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>编辑文件 hexo\themes\modernist\layout_partial\head.ejs, 在<head>之前增加：</head></li>
+</ul>
+<figure class="highlight {bash}"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="variable">%-</span> partial(<span class="string">'baidu_tongji'</span>) <span class="variable">%&gt;</span></div></pre></td></tr></table></figure>
 
-<p>编辑文件 hexo\themes\modernist\layout_partial\head.ejs, 在<head>之前增加：</head></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'baidu_tongji'</span>) %&gt;</div></pre></td></tr></table></figure>
-
-<p>参考文章：<a href="http://www.tuicool.com/articles/AfQnQjy" target="_blank" rel="external">hexo你的博客</a><br>8.在<a href="http://www.pinpaibao.cn/" target="_blank" rel="external">品牌宝</a>申请个人网站认证</p>
+<p>参考文章：<a href="http://www.tuicool.com/articles/AfQnQjy" target="_blank" rel="external">hexo你的博客</a></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -141,6 +167,14 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2014/11/02/Web知识学习笔记/" title="Web知识学习笔记">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  Web知识学习笔记</span>
+</a>
+</div>
+
 
 <div class="next">
 <a href="/2014/10/27/hello-world/"  title="Hello World!">
@@ -176,6 +210,8 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 		
 			<li><a href="/categories/HEXO/" title="HEXO">HEXO<sup>2</sup></a></li>
 		
+			<li><a href="/categories/PM学技术/" title="PM学技术">PM学技术<sup>1</sup></a></li>
+		
 		</ul>
 </div>
 
@@ -186,6 +222,12 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 		<ul class="clearfix">
 		
 			<li><a href="/tags/HEXO/" title="HEXO">HEXO<sup>2</sup></a></li>
+		
+			<li><a href="/tags/HTML/" title="HTML">HTML<sup>1</sup></a></li>
+		
+			<li><a href="/tags/web/" title="web">web<sup>1</sup></a></li>
+		
+			<li><a href="/tags/前端/" title="前端">前端<sup>1</sup></a></li>
 		
 		</ul>
 </div>

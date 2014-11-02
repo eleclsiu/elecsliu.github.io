@@ -1,0 +1,470 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7e9e33bb747110e6cd8029ddf276f298' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<head>
+  <meta name="google-site-verification" content="QTb4bax4WDik48VCaXhW3aNBE9QyFGhv_l-P3gjYWTM" />
+  <meta name="baidu-site-verification" content="viZO9Bg3xF" />
+  <meta charset="UTF-8">
+  
+    <title>Web知识学习笔记 | CSLIU&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="CSLIU">
+    
+    <meta name="description" content="学习来源为微信公众号：互联网产品经理文集
+
+缓存
+1. 本地缓存
+
+将不需要每次重复更新的icon图标、图片等在本地存储，加快网页响应。
+但有时需要定期更新，常用的定期更新机制有：设置更新标志、判断最后更新时间、定时强制更新等
+
+2. 服务器缓存
+
+例子：打分性的排行榜，计算量大，不能每个用户的每次">
+    
+    
+    
+    
+    <link rel="alternate" href="/atom.xml" title="CSLIU&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="CSLIU&#39;s Blog" title="CSLIU&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="CSLIU&#39;s Blog">CSLIU&#39;s Blog</a></h1>
+				<h2 class="blog-motto">Dream begins with single step</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/11/02/Web知识学习笔记/" title="Web知识学习笔记" itemprop="url">Web知识学习笔记</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://elecsliu.com" title="CSLIU">CSLIU</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2014-11-02T07:59:15.000Z" itemprop="datePublished">11月 2 2014</time>
+    更新日期:<time datetime="2014-11-02T08:26:09.000Z" itemprop="dateModified">11月 2 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#缓存"><span class="toc-number">1.</span> <span class="toc-text">缓存</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-_本地缓存"><span class="toc-number">1.1.</span> <span class="toc-text">1. 本地缓存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-_服务器缓存"><span class="toc-number">1.2.</span> <span class="toc-text">2. 服务器缓存</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同步异步"><span class="toc-number">2.</span> <span class="toc-text">同步异步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP"><span class="toc-number">3.</span> <span class="toc-text">HTTP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#静态、动态页面"><span class="toc-number">4.</span> <span class="toc-text">静态、动态页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#程序设计模式MVP"><span class="toc-number">5.</span> <span class="toc-text">程序设计模式MVP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#URL"><span class="toc-number">6.</span> <span class="toc-text">URL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网页构成"><span class="toc-number">7.</span> <span class="toc-text">网页构成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-_HTML(HypeText_Mark-up_Language)"><span class="toc-number">7.1.</span> <span class="toc-text">1. HTML(HypeText Mark-up Language)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-_CSS(Cascading_Style_Sheets)"><span class="toc-number">7.2.</span> <span class="toc-text">2. CSS(Cascading Style Sheets)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-_JS(Javascript)"><span class="toc-number">7.3.</span> <span class="toc-text">3. JS(Javascript)</span></a></li></ol></li></ol>
+		</div>
+		
+		<p>学习来源为微信公众号：<strong>互联网产品经理文集</strong></p>
+<hr>
+<h2 id="缓存">缓存</h2>
+<h3 id="1-_本地缓存">1. 本地缓存</h3>
+<ul>
+<li>将不需要每次重复更新的icon图标、图片等在本地存储，加快网页响应。</li>
+<li>但有时需要定期更新，常用的定期更新机制有：设置更新标志、判断最后更新时间、定时强制更新等</li>
+</ul>
+<h3 id="2-_服务器缓存">2. 服务器缓存</h3>
+<ul>
+<li>例子：打分性的排行榜，计算量大，不能每个用户的每次请求都去计算实时的排序，这时需将结果存储起来，一段时间内都从该结果读取排行榜数据。</li>
+<li>服务器存储的主要情况：<ul>
+<li>将数据库查询或计算结果缓存</li>
+<li>将多数时间内不变的页面缓存</li>
+<li>将读取频繁的数据缓存</li>
+</ul>
+</li>
+<li>更新问题：对于更新频繁或实时性要求高的数据不适合服务器缓存。</li>
+<li>更新频次的确定要考虑计算量、使用场景、研发技术和框架等</li>
+</ul>
+<hr>
+<h2 id="同步异步">同步异步</h2>
+<blockquote>
+<ul>
+<li>同步：服务器更新后才返回端显示</li>
+<li>异步：用户操作立即响应，不需等服务器反馈</li>
+</ul>
+</blockquote>
+<p>需要考量的问题：</p>
+<blockquote>
+<ul>
+<li>该操作的数据是否必须保持服务端及时更新？</li>
+<li>该操作是否有必要打断用户的使用，让用户等待？</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="HTTP">HTTP</h2>
+<blockquote>
+<ul>
+<li>HTTP Request: 请求行、HTTP头、内容</li>
+<li>HTTP Response: 状态行、HTTP头、内容</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="静态、动态页面">静态、动态页面</h2>
+<blockquote>
+<ul>
+<li>静态页面：不需要服务器器端程序进行处理的页面</li>
+<li>动态页面：需要服务器端脚本进行处理之后输出的页面</li>
+<li>伪静态：可以把动态语言（比如PHP）的程序文件“.php”伪装成“.html”或者“.htm”。一方面可以避免黑客对于服务器处理逻辑的揣测，另一方面有利于<strong>SEO</strong></li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="程序设计模式MVP">程序设计模式<code>MVP</code></h2>
+<blockquote>
+<ul>
+<li>模型（Model）、视图（View）和控制器（Controller）</li>
+<li><code>前端工程师</code>会侧重于V、C的开发（也就是我们看到的页面和页面的展示逻辑）</li>
+<li><code>后端工程师</code>则主要侧重于M及其对应的数据库表、存储等的开发（也就是各种涉及到的对象，及对象的一些操作）</li>
+<li>如下即为研发用户注册/登录功能时的MVP示意图：<br><img src="/images/MVP_1.png" alt="MVP示例图"></li>
+<li>MVP三者相互独立，用户模型M除了可以给“注册”这个控制器使用，也可以给“登录”控制器使用。如果要更改密码验证规则，只需修改用户模型。整个代码的可维护性、开发效率大大提高了。</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="URL">URL</h2>
+<blockquote>
+<ul>
+<li><p><code>http://news.sina.com.cn/c/2014-10-04/203630948833.shtml</code><br>其中<code>http</code>是协议，<code>news.sina.com.cn</code>是域名，<code>/c/2014-10-04/</code>是路径，最后是文件名</p>
+</li>
+<li><p><code>http://www.baidu.com/s?wd=parameters&amp;ie=utf-8&amp;f=8&amp;tn=baidu</code><br>其中<code>wd</code>、<code>ie</code>、<code>f</code>、<code>tn</code>是参数名，<code>=</code>后面是参数值</p>
+</li>
+<li><p><code>http://chanyouji.com/articles/141</code><br><code>141</code>是文章的ID或唯一标识</p>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="网页构成">网页构成</h2>
+<h3 id="1-_HTML(HypeText_Mark-up_Language)">1. HTML(HypeText Mark-up Language)</h3>
+<blockquote>
+<ul>
+<li><code>网页的内容</code></li>
+<li>描述网页文档结构的语言，通过一系列标签定义网页内容</li>
+<li>Head:描述性信息，不显示在网页</li>
+<li>Body:<code>&lt;p&gt;段落文字&lt;a color=&quot;red&quot;&gt;红色字&lt;/a&gt;&lt;/p&gt;</code></li>
+</ul>
+</blockquote>
+<h3 id="2-_CSS(Cascading_Style_Sheets)">2. CSS(Cascading Style Sheets)</h3>
+<blockquote>
+<ul>
+<li><code>网页的表现</code></li>
+<li>精确控制网页元素展示方法，定义在Head部分</li>
+<li><code>&lt;style&gt;&lt;/style&gt;</code></li>
+</ul>
+</blockquote>
+<h3 id="3-_JS(Javascript)">3. JS(Javascript)</h3>
+<blockquote>
+<ul>
+<li><code>网页的行为</code></li>
+<li>网页中动态元素（评论展开、输入框文字变化等）的标签和属性的脚本语言</li>
+<li><code>&lt;script&gt;&lt;/script&gt;</code></li>
+</ul>
+</blockquote>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/前端/">前端</a><a href="/tags/web/">web</a><a href="/tags/HTML/">HTML</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/PM学技术/">PM学技术</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://elecsliu.com/2014/11/02/Web知识学习笔记/" data-title="Web知识学习笔记 | CSLIU&#39;s Blog" data-tsina="1667773630" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2014/11/01/博客搭建记录/"  title="博客搭建记录">
+ <strong>NEXT:</strong><br/> 
+ <span>博客搭建记录
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#缓存"><span class="toc-number">1.</span> <span class="toc-text">缓存</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-_本地缓存"><span class="toc-number">1.1.</span> <span class="toc-text">1. 本地缓存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-_服务器缓存"><span class="toc-number">1.2.</span> <span class="toc-text">2. 服务器缓存</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同步异步"><span class="toc-number">2.</span> <span class="toc-text">同步异步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP"><span class="toc-number">3.</span> <span class="toc-text">HTTP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#静态、动态页面"><span class="toc-number">4.</span> <span class="toc-text">静态、动态页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#程序设计模式MVP"><span class="toc-number">5.</span> <span class="toc-text">程序设计模式MVP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#URL"><span class="toc-number">6.</span> <span class="toc-text">URL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网页构成"><span class="toc-number">7.</span> <span class="toc-text">网页构成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-_HTML(HypeText_Mark-up_Language)"><span class="toc-number">7.1.</span> <span class="toc-text">1. HTML(HypeText Mark-up Language)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-_CSS(Cascading_Style_Sheets)"><span class="toc-number">7.2.</span> <span class="toc-text">2. CSS(Cascading Style Sheets)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-_JS(Javascript)"><span class="toc-number">7.3.</span> <span class="toc-text">3. JS(Javascript)</span></a></li></ol></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/HEXO/" title="HEXO">HEXO<sup>2</sup></a></li>
+		
+			<li><a href="/categories/PM学技术/" title="PM学技术">PM学技术<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/HEXO/" title="HEXO">HEXO<sup>2</sup></a></li>
+		
+			<li><a href="/tags/HTML/" title="HTML">HTML<sup>1</sup></a></li>
+		
+			<li><a href="/tags/web/" title="web">web<sup>1</sup></a></li>
+		
+			<li><a href="/tags/前端/" title="前端">前端<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Welcome to my blog. <br/>
+			I&#39;m working hard to be an excellent PM.</p>
+	</section>
+	 
+	<div class="social-font clearfix">
+		
+		<a href="http://weibo.com/1667773630" target="_blank" title="weibo"></a>
+		
+		
+		
+		<a href="https://github.com/elecsliu" target="_blank" title="github"></a>
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2014 
+		
+		<a href="http://elecsliu.com" target="_blank" title="CSLIU">CSLIU</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"elecsliu"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-56308736-1', 'elecsliu.com');  
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+</html>
