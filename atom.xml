@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Dream begins with single step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://elecsliu.com/"/>
-  <updated>2014-11-04T08:48:00.431Z</updated>
+  <updated>2014-11-04T13:35:55.227Z</updated>
   <id>http://elecsliu.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://elecsliu.com/2014/11/03/Human-Computer%20Interaction/"/>
     <id>http://elecsliu.com/2014/11/03/Human-Computer Interaction/</id>
     <published>2014-11-03T07:53:20.000Z</published>
-    <updated>2014-11-04T08:47:33.000Z</updated>
+    <updated>2014-11-04T13:35:44.000Z</updated>
     <content type="html"><![CDATA[<p>课程信息</p>
 <blockquote>
 <ul>
@@ -27,7 +27,15 @@
 <li>授课教师：<a href="https://www.coursera.org/instructor/~175" target="_blank" rel="external">Scott Klemmer</a>,  University of Califonia, San Diego</li>
 </ul>
 </blockquote>
-<h1 id="Week_1">Week 1</h1>
+<h1 id="Week_1_Introduction">Week 1 Introduction</h1>
+<h2 id="原型">原型</h2>
+<ol>
+<li>原型可以帮助找到很难预测到的问题，获得<strong>反馈</strong></li>
+<li>原型可以是不完整的，通过多次设计不断接近<strong>目标</strong></li>
+<li>原型即问题，通过原型多问问题</li>
+<li>案例：柯达数码相机、波音客机、苹果零售店等</li>
+</ol>
+<h2 id="_"> </h2>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>课程信息</p>
@@ -49,16 +57,16 @@
     <link href="http://elecsliu.com/2014/11/02/Web%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://elecsliu.com/2014/11/02/Web知识学习笔记/</id>
     <published>2014-11-02T07:59:15.000Z</published>
-    <updated>2014-11-02T08:26:09.000Z</updated>
+    <updated>2014-11-04T12:15:41.000Z</updated>
     <content type="html"><![CDATA[<p>学习来源为微信公众号：<strong>互联网产品经理文集</strong></p>
 <hr>
 <h2 id="缓存">缓存</h2>
-<h3 id="1-_本地缓存">1. 本地缓存</h3>
+<h3 id="本地缓存">本地缓存</h3>
 <ul>
 <li>将不需要每次重复更新的icon图标、图片等在本地存储，加快网页响应。</li>
 <li>但有时需要定期更新，常用的定期更新机制有：设置更新标志、判断最后更新时间、定时强制更新等</li>
 </ul>
-<h3 id="2-_服务器缓存">2. 服务器缓存</h3>
+<h3 id="服务器缓存">服务器缓存</h3>
 <ul>
 <li>例子：打分性的排行榜，计算量大，不能每个用户的每次请求都去计算实时的排序，这时需将结果存储起来，一段时间内都从该结果读取排行榜数据。</li>
 <li>服务器存储的主要情况：<ul>
@@ -127,7 +135,7 @@
 </blockquote>
 <hr>
 <h2 id="网页构成">网页构成</h2>
-<h3 id="1-_HTML(HypeText_Mark-up_Language)">1. HTML(HypeText Mark-up Language)</h3>
+<h3 id="HTML(HypeText_Mark-up_Language)">HTML(HypeText Mark-up Language)</h3>
 <blockquote>
 <ul>
 <li><code>网页的内容</code></li>
@@ -136,7 +144,7 @@
 <li>Body:<code>&lt;p&gt;段落文字&lt;a color=&quot;red&quot;&gt;红色字&lt;/a&gt;&lt;/p&gt;</code></li>
 </ul>
 </blockquote>
-<h3 id="2-_CSS(Cascading_Style_Sheets)">2. CSS(Cascading Style Sheets)</h3>
+<h3 id="CSS(Cascading_Style_Sheets)">CSS(Cascading Style Sheets)</h3>
 <blockquote>
 <ul>
 <li><code>网页的表现</code></li>
@@ -144,7 +152,7 @@
 <li><code>&lt;style&gt;&lt;/style&gt;</code></li>
 </ul>
 </blockquote>
-<h3 id="3-_JS(Javascript)">3. JS(Javascript)</h3>
+<h3 id="JS(Javascript)">JS(Javascript)</h3>
 <blockquote>
 <ul>
 <li><code>网页的行为</code></li>
@@ -157,9 +165,9 @@
     <![CDATA[<p>学习来源为微信公众号：<strong>互联网产品经理文集</strong></p>
 <hr>
 <h2 id="缓存">缓存</h2>
-<h3 id="1-_本地缓存">1. 本地缓存</h3>
+<h3 id="本地缓存">本地缓存</h3>
 <ul>
-<li>将不需要每次重复更新的icon图标、图片等在本地存储，加快网页]]>
+<li>将不需要每次重复更新的icon图标、图片等在本地存储，加快网页响应。</l]]>
     </summary>
     
       <category term="前端" scheme="http://elecsliu.com/tags/%E5%89%8D%E7%AB%AF/"/>
