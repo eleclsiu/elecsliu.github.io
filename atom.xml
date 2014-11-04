@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Dream begins with single step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://elecsliu.com/"/>
-  <updated>2014-11-02T09:08:20.708Z</updated>
+  <updated>2014-11-04T08:48:00.431Z</updated>
   <id>http://elecsliu.com/</id>
   
   <author>
@@ -13,6 +13,36 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Human-Computer Interaction]]></title>
+    <link href="http://elecsliu.com/2014/11/03/Human-Computer%20Interaction/"/>
+    <id>http://elecsliu.com/2014/11/03/Human-Computer Interaction/</id>
+    <published>2014-11-03T07:53:20.000Z</published>
+    <updated>2014-11-04T08:47:33.000Z</updated>
+    <content type="html"><![CDATA[<p>课程信息</p>
+<blockquote>
+<ul>
+<li>课程名称：<a href="https://www.coursera.org/course/hciucsd" target="_blank" rel="external">Human-Computer Interaction</a></li>
+<li>授课教师：<a href="https://www.coursera.org/instructor/~175" target="_blank" rel="external">Scott Klemmer</a>,  University of Califonia, San Diego</li>
+</ul>
+</blockquote>
+<h1 id="Week_1">Week 1</h1>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>课程信息</p>
+<blockquote>
+<ul>
+<li>课程名称：<a href="https://www.coursera.org/course/hciucsd" target="_blank" rel="external">Human-Computer Inter]]>
+    </summary>
+    
+      <category term="人机交互" scheme="http://elecsliu.com/tags/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/"/>
+    
+      <category term="原型" scheme="http://elecsliu.com/tags/%E5%8E%9F%E5%9E%8B/"/>
+    
+      <category term="公开课" scheme="http://elecsliu.com/categories/%E5%85%AC%E5%BC%80%E8%AF%BE/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Web知识学习笔记]]></title>
