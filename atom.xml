@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Dream begins with single step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://elecsliu.com/"/>
-  <updated>2014-11-04T13:35:55.227Z</updated>
+  <updated>2014-11-05T08:12:15.726Z</updated>
   <id>http://elecsliu.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://elecsliu.com/2014/11/03/Human-Computer%20Interaction/"/>
     <id>http://elecsliu.com/2014/11/03/Human-Computer Interaction/</id>
     <published>2014-11-03T07:53:20.000Z</published>
-    <updated>2014-11-04T13:35:44.000Z</updated>
+    <updated>2014-11-05T08:12:05.000Z</updated>
     <content type="html"><![CDATA[<p>课程信息</p>
 <blockquote>
 <ul>
@@ -35,7 +35,42 @@
 <li>原型即问题，通过原型多问问题</li>
 <li>案例：柯达数码相机、波音客机、苹果零售店等</li>
 </ol>
-<h2 id="_"> </h2>
+<h2 id="设计的评估">设计的评估</h2>
+<ol>
+<li><p>可用性研究（usability studies）<br>缺点：</p>
+<blockquote>
+<ul>
+<li>使用场景局限、偏差————<strong><em>参与观察</em></strong></li>
+<li>用户心理状态、倾向取悦</li>
+<li>不同用户界面横向对比————<strong><em>对比实验，A/B Test</em></strong></li>
+</ul>
+</blockquote>
+</li>
+<li><p>焦点小组<br>缺点：</p>
+<blockquote>
+<ul>
+<li>由于心理原因，倾向取悦或说出与自己实际行为不符的答案</li>
+</ul>
+</blockquote>
+</li>
+<li><p>问卷调查</p>
+</li>
+<li><p>咨询专家</p>
+</li>
+<li><p>仿真模型</p>
+</li>
+<li><p>对设计进行评估时需要考虑的问题</p>
+<blockquote>
+<ul>
+<li>可重复性</li>
+<li>普遍性、现实性</li>
+<li>对比</li>
+<li>如何有效利用资源来实现目标</li>
+<li>最有效的评估方法其实是<strong><em>与人交流</em></strong></li>
+</ul>
+</blockquote>
+</li>
+</ol>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>课程信息</p>
