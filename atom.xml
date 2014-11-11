@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Dream begins with single step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://elecsliu.com/"/>
-  <updated>2014-11-05T08:12:15.726Z</updated>
+  <updated>2014-11-11T14:16:48.239Z</updated>
   <id>http://elecsliu.com/</id>
   
   <author>
@@ -15,11 +15,35 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[设计心理学]]></title>
+    <link href="http://elecsliu.com/2014/11/11/%E8%AE%BE%E8%AE%A1%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    <id>http://elecsliu.com/2014/11/11/设计心理学/</id>
+    <published>2014-11-11T14:05:16.000Z</published>
+    <updated>2014-11-11T14:16:13.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://img5.douban.com/lpic/s1915036.jpg" alt="cover"><br>书名：<a href="http://book.douban.com/subject/1288844" target="_blank" rel="external">设计心理学</a><br>作者：Donald Norman</p>
+<h1 id="收获">收获</h1>
+<h1 id="笔记">笔记</h1>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://img5.douban.com/lpic/s1915036.jpg" alt="cover"><br>书名：<a href="http://book.douban.com/subject/1288844" target="_blank" r]]>
+    </summary>
+    
+      <category term="交互设计" scheme="http://elecsliu.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="心理学" scheme="http://elecsliu.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+      <category term="工业设计" scheme="http://elecsliu.com/tags/%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="读书笔记" scheme="http://elecsliu.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Human-Computer Interaction]]></title>
     <link href="http://elecsliu.com/2014/11/03/Human-Computer%20Interaction/"/>
     <id>http://elecsliu.com/2014/11/03/Human-Computer Interaction/</id>
     <published>2014-11-03T07:53:20.000Z</published>
-    <updated>2014-11-05T08:12:05.000Z</updated>
+    <updated>2014-11-11T14:05:02.000Z</updated>
     <content type="html"><![CDATA[<p>课程信息</p>
 <blockquote>
 <ul>
@@ -66,11 +90,29 @@
 <li>普遍性、现实性</li>
 <li>对比</li>
 <li>如何有效利用资源来实现目标</li>
-<li>最有效的评估方法其实是<strong><em>与人交流</em></strong></li>
+<li>最有效的评估方法其实是<strong><em>与人交流</em></strong>/<strong><em>用户访谈</em></strong></li>
 </ul>
 </blockquote>
 </li>
 </ol>
+<h1 id="Week_2_Needfinding">Week 2 Needfinding</h1>
+<h2 id="观察">观察</h2>
+<h2 id="访谈">访谈</h2>
+<ol>
+<li>访谈对象的选择</li>
+<li>提问的艺术<blockquote>
+<ul>
+<li>避免答案导向性的问题</li>
+<li>避免假设使用场景</li>
+<li>避免答案二选一的问题</li>
+<li>开放式提问——交流——关注用户感受——发掘</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h2 id="研究用户日志">研究用户日志</h2>
+<h2 id="创建用户画像Persona">创建用户画像<strong>Persona</strong></h2>
+<p>扩展阅读：<a href="http://cdc.tencent.com/?p=4898" target="_blank" rel="external">创建定性用户画像</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>课程信息</p>
