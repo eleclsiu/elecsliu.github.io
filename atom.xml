@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Dream begins with single step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://elecsliu.com/"/>
-  <updated>2014-11-12T14:32:25.186Z</updated>
+  <updated>2014-11-12T14:41:45.789Z</updated>
   <id>http://elecsliu.com/</id>
   
   <author>
@@ -43,7 +43,7 @@
     <link href="http://elecsliu.com/2014/11/03/Human-Computer%20Interaction/"/>
     <id>http://elecsliu.com/2014/11/03/Human-Computer Interaction/</id>
     <published>2014-11-03T07:53:20.000Z</published>
-    <updated>2014-11-12T14:31:26.000Z</updated>
+    <updated>2014-11-12T14:39:57.000Z</updated>
     <content type="html"><![CDATA[<p>课程信息</p>
 <blockquote>
 <ul>
@@ -61,7 +61,8 @@
 </ol>
 <h2 id="设计的评估">设计的评估</h2>
 <ol>
-<li><p>可用性研究（usability studies）<br>缺点：</p>
+<li>可用性研究（usability studies）<br>缺点：</li>
+</ol>
 <blockquote>
 <ul>
 <li>使用场景局限、偏差————<strong><em>参与观察</em></strong></li>
@@ -69,14 +70,15 @@
 <li>不同用户界面横向对比————<strong><em>对比实验，A/B Test</em></strong></li>
 </ul>
 </blockquote>
-</li>
-<li><p>焦点小组<br>缺点：</p>
+<ol>
+<li>焦点小组<br>缺点：</li>
+</ol>
 <blockquote>
 <ul>
 <li>由于心理原因，倾向取悦或说出与自己实际行为不符的答案</li>
 </ul>
 </blockquote>
-</li>
+<ol>
 <li><p>问卷调查</p>
 </li>
 <li><p>咨询专家</p>
@@ -84,6 +86,8 @@
 <li><p>仿真模型</p>
 </li>
 <li><p>对设计进行评估时需要考虑的问题</p>
+</li>
+</ol>
 <blockquote>
 <ul>
 <li>可重复性</li>
@@ -93,14 +97,14 @@
 <li>最有效的评估方法其实是<strong><em>与人交流</em></strong>/<strong><em>用户访谈</em></strong></li>
 </ul>
 </blockquote>
-</li>
-</ol>
 <h1 id="Week_2_Needfinding">Week 2 Needfinding</h1>
 <h2 id="观察">观察</h2>
 <h2 id="访谈">访谈</h2>
 <ol>
 <li>访谈对象的选择</li>
-<li>提问的艺术<blockquote>
+<li>提问的艺术</li>
+</ol>
+<blockquote>
 <ul>
 <li>避免答案导向性的问题</li>
 <li>避免假设使用场景</li>
@@ -108,8 +112,6 @@
 <li>开放式提问——交流——关注用户感受——发掘</li>
 </ul>
 </blockquote>
-</li>
-</ol>
 <h2 id="研究用户日志">研究用户日志</h2>
 <h2 id="创建用户画像Persona">创建用户画像<strong>Persona</strong></h2>
 <p>扩展阅读：<a href="http://cdc.tencent.com/?p=4898" target="_blank" rel="external">创建定性用户画像</a></p>
@@ -126,28 +128,27 @@
 <h2 id="故事板_Storyboarding">故事板 Storyboarding</h2>
 <h3 id="故事板内容">故事板内容</h3>
 <ol>
-<li>背景</li>
-</ol>
+<li><p>背景</p>
 <ul>
 <li>用户、人</li>
 <li>环境、场景</li>
 <li>要完成的任务</li>
 </ul>
-<ol>
-<li>顺序</li>
-</ol>
+</li>
+<li><p>顺序</p>
 <ul>
 <li>步骤？</li>
 <li>是什么原因使得某人要开始使用这个APP？</li>
 </ul>
-<ol>
-<li>满意的解决方案</li>
-</ol>
+</li>
+<li><p>满意的解决方案</p>
 <ul>
 <li>什么驱使用户使用它？</li>
 <li>它能帮用户完成什么任务？</li>
 <li>它应该满足用户什么需求？</li>
 </ul>
+</li>
+</ol>
 <h3 id="优点">优点</h3>
 <ol>
 <li><p>帮助团队建立<strong>全局观</strong>，通盘考虑产品目标</p>
