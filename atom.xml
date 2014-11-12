@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Dream begins with single step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://elecsliu.com/"/>
-  <updated>2014-11-11T14:16:48.239Z</updated>
+  <updated>2014-11-12T14:32:25.186Z</updated>
   <id>http://elecsliu.com/</id>
   
   <author>
@@ -43,7 +43,7 @@
     <link href="http://elecsliu.com/2014/11/03/Human-Computer%20Interaction/"/>
     <id>http://elecsliu.com/2014/11/03/Human-Computer Interaction/</id>
     <published>2014-11-03T07:53:20.000Z</published>
-    <updated>2014-11-11T14:05:02.000Z</updated>
+    <updated>2014-11-12T14:31:26.000Z</updated>
     <content type="html"><![CDATA[<p>课程信息</p>
 <blockquote>
 <ul>
@@ -113,6 +113,52 @@
 <h2 id="研究用户日志">研究用户日志</h2>
 <h2 id="创建用户画像Persona">创建用户画像<strong>Persona</strong></h2>
 <p>扩展阅读：<a href="http://cdc.tencent.com/?p=4898" target="_blank" rel="external">创建定性用户画像</a></p>
+<h2 id="用户行为分析_Activity_analysis">用户行为分析 Activity analysis</h2>
+<ol>
+<li>操作步骤 steps</li>
+<li>所需物品 artifacts</li>
+<li>用户目标 goals</li>
+<li>用户痛点 pain points</li>
+</ol>
+<h1 id="Week_3_Rapid_Prototyping">Week 3 Rapid Prototyping</h1>
+<p>在不同的产品研发阶段，产品原型所需的保真度也不同，随着时间推进，保真度由低变高。</p>
+<p><img src="/images/HCI_1.png" alt="保真&amp;时间"></p>
+<h2 id="故事板_Storyboarding">故事板 Storyboarding</h2>
+<h3 id="故事板内容">故事板内容</h3>
+<ol>
+<li>背景</li>
+</ol>
+<ul>
+<li>用户、人</li>
+<li>环境、场景</li>
+<li>要完成的任务</li>
+</ul>
+<ol>
+<li>顺序</li>
+</ol>
+<ul>
+<li>步骤？</li>
+<li>是什么原因使得某人要开始使用这个APP？</li>
+</ul>
+<ol>
+<li>满意的解决方案</li>
+</ol>
+<ul>
+<li>什么驱使用户使用它？</li>
+<li>它能帮用户完成什么任务？</li>
+<li>它应该满足用户什么需求？</li>
+</ul>
+<h3 id="优点">优点</h3>
+<ol>
+<li><p>帮助团队建立<strong>全局观</strong>，通盘考虑产品目标</p>
+</li>
+<li><p>不需要确认具体的用户界面</p>
+</li>
+<li><p>助于团队达成共识</p>
+</li>
+</ol>
+<h2 id="纸上原型">纸上原型</h2>
+<h2 id="数字原型">数字原型</h2>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>课程信息</p>
@@ -134,7 +180,7 @@
     <link href="http://elecsliu.com/2014/11/02/Web%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://elecsliu.com/2014/11/02/Web知识学习笔记/</id>
     <published>2014-11-02T07:59:15.000Z</published>
-    <updated>2014-11-04T12:15:41.000Z</updated>
+    <updated>2014-11-12T14:32:03.000Z</updated>
     <content type="html"><![CDATA[<p>学习来源为微信公众号：<strong>互联网产品经理文集</strong></p>
 <hr>
 <h2 id="缓存">缓存</h2>
@@ -235,6 +281,14 @@
 <li><code>网页的行为</code></li>
 <li>网页中动态元素（评论展开、输入框文字变化等）的标签和属性的脚本语言</li>
 <li><code>&lt;script&gt;&lt;/script&gt;</code></li>
+</ul>
+</blockquote>
+<p>技术实现逻辑</p>
+<blockquote>
+<ul>
+<li>语法</li>
+<li>操作HTML元素、CSS样式、响应某些事件</li>
+<li>对于浏览器窗口的操作</li>
 </ul>
 </blockquote>
 ]]></content>
