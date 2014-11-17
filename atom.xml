@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Dream begins with single step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://elecsliu.com/"/>
-  <updated>2014-11-12T14:41:45.789Z</updated>
+  <updated>2014-11-17T08:48:20.223Z</updated>
   <id>http://elecsliu.com/</id>
   
   <author>
@@ -43,7 +43,7 @@
     <link href="http://elecsliu.com/2014/11/03/Human-Computer%20Interaction/"/>
     <id>http://elecsliu.com/2014/11/03/Human-Computer Interaction/</id>
     <published>2014-11-03T07:53:20.000Z</published>
-    <updated>2014-11-12T14:39:57.000Z</updated>
+    <updated>2014-11-17T08:48:00.000Z</updated>
     <content type="html"><![CDATA[<p>课程信息</p>
 <blockquote>
 <ul>
@@ -61,24 +61,10 @@
 </ol>
 <h2 id="设计的评估">设计的评估</h2>
 <ol>
-<li>可用性研究（usability studies）<br>缺点：</li>
-</ol>
-<blockquote>
-<ul>
-<li>使用场景局限、偏差————<strong><em>参与观察</em></strong></li>
-<li>用户心理状态、倾向取悦</li>
-<li>不同用户界面横向对比————<strong><em>对比实验，A/B Test</em></strong></li>
-</ul>
-</blockquote>
-<ol>
-<li>焦点小组<br>缺点：</li>
-</ol>
-<blockquote>
-<ul>
-<li>由于心理原因，倾向取悦或说出与自己实际行为不符的答案</li>
-</ul>
-</blockquote>
-<ol>
+<li><p>可用性研究（usability studies）<br>缺点:<br>使用场景局限、偏差————<strong><em>参与观察</em></strong>;<br>用户心理状态、倾向取悦;<br>不同用户界面横向对比————<strong><em>对比实验，A/B Test</em></strong></p>
+</li>
+<li><p>焦点小组<br>缺点：由于心理原因，倾向取悦或说出与自己实际行为不符的答案</p>
+</li>
 <li><p>问卷调查</p>
 </li>
 <li><p>咨询专家</p>
@@ -160,6 +146,8 @@
 </ol>
 <h2 id="纸上原型">纸上原型</h2>
 <h2 id="数字原型">数字原型</h2>
+<h2 id="视频原型">视频原型</h2>
+<h1 id="Week3_Heuristic_Evaluation">Week3 Heuristic Evaluation</h1>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>课程信息</p>
